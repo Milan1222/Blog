@@ -1,0 +1,14 @@
+/* MOJ CUSTOM CSS */
+
+html {
+    font-size: 14px;
+}
+
+.blog-masthead {
+    background-color:  #b34848;
+}
+
+h1, h2, h3, h4 {
+    color: #b34848;
+}
+
