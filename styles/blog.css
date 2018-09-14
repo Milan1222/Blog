@@ -61,7 +61,6 @@ h6,
 }
 .nav-link:hover,
 .nav-link:focus {
-    color: #fff;
     background-color: transparent;
 }
 

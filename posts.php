@@ -1,5 +1,5 @@
 <?php
-include "db.php";//povezala sam se sa bazom podataka, i ubacila db.php fajl u posts.php
+include "db.php";
 ?>
 
 <main role="main" class="container">
@@ -7,13 +7,13 @@ include "db.php";//povezala sam se sa bazom podataka, i ubacila db.php fajl u po
         <div class="col-sm-8 blog-main">
 <?php
 
-$sql = "SELECT * FROM posts ORDER BY created_at DESC";//selektuj sve iz tabele /posts/ i poredjaj po created_at od zadnjeg do prvog
+$sql = "SELECT * FROM posts ORDER BY created_at DESC";
 $statement = $connection->prepare($sql);
 
 $statement->execute();//izvrsavamo upit
-$statement->setFetchMode(PDO::FETCH_ASSOC);//rezultat se vraca kao asocijativni niz
+$statement->setFetchMode(PDO::FETCH_ASSOC);
 
-$posts = $statement->fetchAll();//rezultat smo stavili u promenljivu $posts
+$posts = $statement->fetchAll();
 
 ?>
 
